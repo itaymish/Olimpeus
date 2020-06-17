@@ -1,8 +1,3 @@
-/**
- * TO DO LIST:
- * 
- * Add Ghosts ani and att, add choice pick, add plyr att ani and all mess - time death lvl and Ghost's mess. Add anywr shield, and start.
- */
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     hero.setImage(img`
 . . . . f f f f f f . . . . . . 
@@ -688,7 +683,7 @@ e e e 4 4 7 7 7 f 7 7 7 4 4 e e e
 `)
 game.splash("Olimpeus", "Press A")
 if (game.ask("Do you know how to play?", "A-NO B-YES") && controller.A.isPressed()) {
-    game.showLongText("You are the \"hero\". Press A to shoot. Watch out for the ghosts that attack you. Any hit of the ball will kill the ghost and get you a point. Every touch of ghost will make you heart. Get to the highest level, kill all the ghosts and win! Oh right, I forgot something ... During the game, shields will appear in different places, each of which brings you heart. You kill all the ghosts, you win. You have no hearts, you lose. At first you have 0 points and 5 hearts. Well, that's all. Good lick!", DialogLayout.Full)
+    game.showLongText("You are the \"hero\". Press A to shoot. Watch out for the ghosts that attack you. Any hit of the ball will kill the ghost and get you a point. Every touch of ghost will make you heart. Get to the highest level, kill all the ghosts and win! Oh right, I forgot something ... During the game, shields will appear in different places, each of which brings you heart. You kill all the ghosts, you win. You have no hearts, you lose. At first you have 0 points and 5 hearts. Well, that's all. Good luck!", DialogLayout.Full)
 } else {
     game.showLongText("Ok, so let's start!", DialogLayout.Full)
 }
