@@ -723,6 +723,24 @@ f d d f
 `, SpriteKind.Food)
 shield.setPosition(Math.randomRange(0, 160), Math.randomRange(0, 120))
 shield.setFlag(SpriteFlag.StayInScreen, true)
+game.setDialogCursor(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`)
 game.onUpdateInterval(1001, function () {
     ghost = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . 
