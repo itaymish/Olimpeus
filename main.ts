@@ -72,6 +72,9 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     info.changeScoreBy(1)
     nos += -1
     otherSprite.startEffect(effects.disintegrate)
+    if (nos == 0) {
+        game.over(true, effects.confetti)
+    }
     music.magicWand.play()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
